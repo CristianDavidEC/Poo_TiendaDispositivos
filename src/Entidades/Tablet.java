@@ -2,7 +2,7 @@ package Entidades;
 
 public class Tablet extends Equipo{
     public Tablet(double precioBase) {
-        super(precioBase);
+        super(precioBase, 5000);
     }
 
     @Override

@@ -13,13 +13,7 @@ public class Venta {
 
     public double calcularValor() {
         if (tarjeta == true) {
-            if (producto instanceof Celular) {
-                return producto.calcularprecio() + 2000;
-            } else if (producto instanceof Tablet) {
-                return producto.calcularprecio() + 5000;
-            } else if (producto instanceof Portatil) {
-                return producto.calcularprecio() + 10000;
-            }
+            return producto.calcularprecio() + producto.getRecargo();
         }
         return producto.calcularprecio();
     }
